@@ -27,7 +27,7 @@ Dell/Cisco/HP/Brocade, e um terminal simulado sobre os arquivos do bundle.
 Não precisa de internet no servidor — as imagens vão dentro do pacote.
 
 ```bash
-tar -xzf loginsight-1.0.tar.gz
+tar -xzf loginsight-1.0.1-amd64.tar.gz
 docker load -i imagens/loginsight.tar.gz
 docker load -i imagens/postgres.tar.gz
 
@@ -37,6 +37,9 @@ docker compose up -d
 
 Abra `http://localhost:5050` e crie a primeira conta — ela administra a
 instalação.
+
+**Manual completo:** [INSTALACAO.md](INSTALACAO.md) — requisitos, licença,
+papéis de usuário, atualização, backup e os problemas mais comuns.
 
 **Pelo Docker Hub**, se o servidor tiver saída para a internet: veja a aba
 de releases para a tag da versão.
