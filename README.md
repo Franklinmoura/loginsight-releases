@@ -22,6 +22,14 @@ Além disso: PSOD e kernel panic com o contexto ao redor, saúde de hardware
 (VOB, IPMI, watchdog), compatibilidade contra regras curadas, logs de switch
 Dell/Cisco/HP/Brocade, e um terminal simulado sobre os arquivos do bundle.
 
+**Switch Dell SmartFabric OS10** tem leitura própria: o sosreport é
+reconhecido como switch, e não como Linux genérico, e a ferramenta lê o
+estado dos comandos `show` — alarmes ativos, integridade do par VLT,
+divergência entre a configuração de boot e a em uso, monitoramento óptico,
+portas sem descrição e agregação sem redundância. Um log inundado vira **um**
+achado dizendo quanto tempo de histórico o equipamento realmente guarda, em
+vez de milhares de linhas repetidas.
+
 ## Instalação
 
 Não precisa de internet no servidor — as imagens vão dentro do pacote.
