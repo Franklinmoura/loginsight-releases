@@ -35,7 +35,7 @@ vez de milhares de linhas repetidas.
 Não precisa de internet no servidor — as imagens vão dentro do pacote.
 
 ```bash
-tar -xzf loginsight-1.0.1-amd64.tar.gz
+tar -xzf loginsight-1.0.2-amd64.tar.gz
 docker load -i imagens/loginsight.tar.gz
 docker load -i imagens/postgres.tar.gz
 
