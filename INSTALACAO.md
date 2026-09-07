@@ -23,8 +23,8 @@ exposta à internet** — o padrão já publica só em `127.0.0.1`.
 ## 1. Extrair
 
 ```bash
-tar -xzf loginsight-1.0.1-amd64.tar.gz
-cd loginsight-1.0.1-amd64   # ou a pasta onde extraiu
+tar -xzf loginsight-1.0.2-amd64.tar.gz
+cd loginsight-1.0.2-amd64   # ou a pasta onde extraiu
 ```
 
 Confira o que baixou, se veio pela internet:
@@ -177,7 +177,7 @@ apenas para os containers.
 Se o servidor tem saída para a internet:
 
 ```bash
-docker pull franklinmoura/loginsightai:1.0.1
+docker pull franklinmoura/loginsightai:1.0.2
 ```
 
 Para uso individual, sem PostgreSQL:
@@ -187,7 +187,7 @@ docker run -d --name loginsight -p 5050:5000 \
   -v loginsight-data:/data \
   -e DATABASE_URL=sqlite:////data/loginsight.db \
   -e SECRET_KEY="uma-frase-longa-e-secreta" \
-  franklinmoura/loginsightai:1.0.1
+  franklinmoura/loginsightai:1.0.2
 ```
 
 SQLite não aguarda escrita concorrente — esse modo é para **um técnico**.
